@@ -1,7 +1,6 @@
 public class EjecutorTerreno {
     public static Terreno terrenoX = new Terreno ();
     public static void main(String[] args) {
-        System.out.println("FORMA LARGA");
         double ancho = (Math.random()*10)+ 1;
         double largo = (Math.random()*10)+ 1;
         double valorMetro = (Math.random()*10)+ 1;
@@ -11,11 +10,7 @@ public class EjecutorTerreno {
         terrenoX.calcularArea();
         terrenoX.calcularCostoTerreno();
         System.out.println("terrenoX: " + terrenoX.toString());
-        System.out.println("FORMA EFICIENTE");
-        Terreno miTerreno = new Terreno(2, 3, 3);
-        miTerreno.calcularArea();
-        miTerreno.calcularCostoTerreno();
-        System.out.println("Mi terreno: " + miTerreno.toString());
+        
     }
 }
 class Terreno{
